@@ -91,3 +91,10 @@ if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword 
     print("ACCESS DENIED")
 }
 // Prints "Welcome!"
+
+var age = 100
+age is Int
+age as CLong
+age as? Int
+age as! CLong
+
