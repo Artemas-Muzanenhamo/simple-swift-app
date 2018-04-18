@@ -84,3 +84,10 @@ if hasDoorKey || knowsOverridePassword {
     print("ACCESS DENIED")
 }
 // Prints "Welcome!"
+
+if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+// Prints "Welcome!"
