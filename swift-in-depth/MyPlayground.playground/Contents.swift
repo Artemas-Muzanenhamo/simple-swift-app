@@ -40,7 +40,7 @@ print("Hi there"); print("Another Print")
 let st = "world"
 print("hello \(st)")
 
-// OPERATORS
+// ============================================ OPERATORS ============================================
 123.5.truncatingRemainder(dividingBy: 123)
 
 let range = 1...3 // represent range from 1 to and including 3
@@ -97,4 +97,18 @@ age is Int
 age as CLong
 age as? Int
 age as! CLong
+
+// ============================================ Declarations and Types ============================================
+
+var someVariable = 10 // infers the type based on the value on the right
+var anotherVariable:Int // we can specify the type if we want.
+anotherVariable = 10 // but we need to assign it to a value.
+
+let someConstant:String // swift allows us to constant whosee values cannot be changed.
+someConstant = "hello" // we can also initialise it
+
+let anInt = 10
+let aDouble = 1.0
+let x = aDouble + Double(anInt) // casting
+
 
