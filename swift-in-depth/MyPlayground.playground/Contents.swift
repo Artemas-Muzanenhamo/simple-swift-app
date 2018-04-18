@@ -45,17 +45,42 @@ print("hello \(st)")
 
 let range = 1...3 // represent range from 1 to and including 3
 let anotherRange = 1..<3 // represent range from 1 to and excluding 3
-1+1 // addition
-2*3 // multiplication
-10/5 //division
-4-2 // subtraction
-1<2 // conditional equality
-2>1 // conditional equality
-1>2 // conditional equality
-4==4 // equality
+1 + 1 // addition
+2 * 3 // multiplication
+10 / 5 //division
+4 - 2 // subtraction
+1 < 2 // conditional equality
+2 > 1 // conditional equality
+1 > 2 // conditional equality
+4 == 4 // equality
 var i = 32 // assignment
-i>>1 // right shift operator
-i<<1 // left-shift operator
+i >> 1 // right shift operator
+i << 1 // left-shift operator
 var a = 20
 var b = 20
 let isTrue = a == b // Logical or Operator
+
+let allowedEntry = false
+if !allowedEntry {
+    print("ACCESS DENIED")
+}
+// Prints "ACCESS DENIED"
+
+let enteredDoorCode = true
+let passedRetinaScan = false
+if enteredDoorCode && passedRetinaScan {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+// Prints "ACCESS DENIED"
+
+
+let hasDoorKey = false
+let knowsOverridePassword = true
+if hasDoorKey || knowsOverridePassword {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+// Prints "Welcome!"
