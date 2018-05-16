@@ -112,3 +112,16 @@ let aDouble = 1.0
 let x = aDouble + Double(anInt) // casting
 
 
+// ================================== TUPLES ===============================
+
+let http404Error = (404, "Not Found")
+// vv That is .... not clean
+http404Error.0
+http404Error.1
+
+// vv That is much cleaner. 404 will be placed in status and "Not Found" will be put into desc
+let (status, desc) = http404Error
+print("\(status): \(desc)")
+
+// If I only want to access one of the fields and not both I can use the wildcard
+
